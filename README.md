@@ -8,7 +8,8 @@ Data flows continuously from raw streaming sources into the **Medallion Architec
 ## 🚀 Features
 - **Declarative pipeline** with Databricks DLT (`@dlt.table`, `@dlt.view`) – no manual DAG orchestration needed.  
 - **Streaming ingestion** of retail data.  
-- **Data quality enforcement** via DLT `EXPECTATIONS`.  
+- **Data quality enforcement** via DLT `EXPECTATIONS`.
+- **Data quarantine for records that fail quality checks**, ensuring bad data is isolated without breaking the pipeline.
 - **Medallion architecture** (Bronze → Silver → Gold) for incremental data quality.  
 - **Gold layer = Kimball Star Schema** (Fact & Dimension tables).  
 - Automatic **lineage tracking, retries, and monitoring** by Databricks.  
