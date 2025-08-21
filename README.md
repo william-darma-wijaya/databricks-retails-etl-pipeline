@@ -31,7 +31,10 @@ The Gold layer is modeled into a Kimball Star Schema using the Yugabyte Retail A
 - Dimension Tables
   - `dim_users` → customer profiles (user_id, name, email, location, signup_date).
   - `dim_products` → product catalog (product_id, name, category, brand, price).
+
 This star schema supports sales analysis, customer behavior insights, and product performance tracking.
+
+Link to sample dataset: [Yugabyte Retail Analytics Sample Dataset](https://docs.yugabyte.com/preview/sample-data/retail-analytics/)
 
 ---
 
